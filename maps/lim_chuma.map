@@ -13953,7 +13953,7 @@
 // entity 155
 {
 "classname" "trigger_textstory"
-"message" "I’ve tried so hard, I’ve done it… I\nkilled some robots, they were very\ntough… but not impossible to kill,\nthis is the best achievement and for\nthe nation of Saiuria I lived and\ndied, these Stroggs were tough… but I\n'noclipped' out of reality… I regret\nI didn't find my wife… to whoever\nfinds this… The Strogg Queen controls\nthem... that’s all I could dig from\ntheir 'written' documents… I wish the\nbest to whoever is reading this,\nescape from this place, have my mine\nlauncher, Godspeed Saiuria, may the\nfall of my home never be in vain… it\nseems like the sun will never shine,\nbut it will, eventually! – Alvin D,\nCommander of Earth Intergalactic\nForces."
+"message" "I`ve tried so hard, I`ve done it… I\nkilled some robots, they were very\ntough… but not impossible to kill, this\nis the best achievement and for the\nnation of Saiuria I lived and died,\nthese Stroggs were tough… but I\n`noclipped` out of reality… I regret I\ndidn`t find my wife… to whoever finds\nthis… The Strogg Queen controls them…\nthat`s all I could dig from their\n`written` documents… I wish the best to\nwhoever is reading this, escape from\nthis place, have my mine launcher,\nGodspeed Saiuria, may the fall of my\nhome never be in vain… it seems like the\nsun will never shine, but it will,\neventually! Alvin D, Commander of\nEarth Intergalactic Forces."
 // brush 0
 {
 ( -4972 3312 -944 ) ( -4972 3280 -976 ) ( -4972 3312 -976 ) trigger [ 1.8369701987210297e-16 -1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
