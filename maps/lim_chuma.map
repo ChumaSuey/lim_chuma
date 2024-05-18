@@ -12131,6 +12131,7 @@
 "classname" "func_button"
 "target" "door2"
 "angle" "90"
+"wait" "-1"
 // brush 0
 {
 ( -3536 -400 -160 ) ( -3536 -432 -192 ) ( -3536 -400 -192 ) +0techlight_1 [ 1.8369701987210302e-16 -1.0000000000000002 0 13 ] [ 0 0 -1.0000000000000002 -160 ] 0 1 1
@@ -15349,6 +15350,7 @@
 "wait" "-1"
 "target" "fw01"
 "speed" "140"
+"target2" "t_autosave2"
 // brush 0
 {
 ( -5760 -3648 -1344 ) ( -5760 -3664 -1344 ) ( -5760 -3664 -1616 ) techdoor_grey1 [ 0 1 0 50 ] [ 0 0 -1 -80 ] 0 1 1
@@ -16691,7 +16693,7 @@
 // entity 409
 {
 "classname" "play_sound_triggered"
-"origin" "-720 1456 -612"
+"origin" "-720 1424 -612"
 "targetname" "radiostatic"
 "noise" "alk_juz/radiostatic1.wav"
 "volume" "1"
@@ -18721,8 +18723,8 @@
 }
 // entity 556
 {
-"classname" "play_sound_repeat"
-"origin" "-7768 -56 444"
+"classname" "ambient_general"
+"origin" "-7784 -56 444"
 "volume" "0.5"
 "noise" "ambient/arwind.wav"
 }
@@ -21363,6 +21365,68 @@
 }
 // entity 753
 {
+"classname" "play_sound_triggered"
+"origin" "-3992 -984 -164"
+"targetname" "radiostatic"
+"noise" "alk_juz/radiostatic1.wav"
+"volume" "1"
+}
+// entity 754
+{
+"classname" "play_sound_triggered"
+"origin" "-4720 2528 -4"
+"targetname" "radiostatic"
+"noise" "alk_juz/radiostatic1.wav"
+"volume" "1"
+}
+// entity 755
+{
+"classname" "play_sound_triggered"
+"origin" "-4736 3008 60"
+"targetname" "radiostatic"
+"noise" "alk_juz/radiostatic1.wav"
+"volume" "1"
+}
+// entity 756
+{
+"classname" "play_sound_triggered"
+"origin" "-4704 2880 -900"
+"targetname" "radiostatic"
+"noise" "alk_juz/radiostatic1.wav"
+"volume" "1"
+}
+// entity 757
+{
+"classname" "play_sound_triggered"
+"origin" "-4704 3184 -900"
+"targetname" "radiostatic"
+"noise" "alk_juz/radiostatic1.wav"
+"volume" "1"
+}
+// entity 758
+{
+"classname" "play_sound_triggered"
+"origin" "-4752 3472 44"
+"targetname" "radiostatic"
+"noise" "alk_juz/radiostatic1.wav"
+"volume" "1"
+}
+// entity 759
+{
+"classname" "play_sound_triggered"
+"origin" "-224 1392 -644"
+"targetname" "radiostatic"
+"noise" "alk_juz/radiostatic1.wav"
+"volume" "1"
+}
+// entity 760
+{
+"classname" "target_autosave"
+"origin" "-5744 -3552 -1536"
+"targetname" "t_autosave2"
+}
+// entity 761
+{
 "classname" "func_group"
 "_tb_type" "_tb_layer"
 "_tb_name" "aux"
@@ -21423,7 +21487,7 @@
 ( -4528 -144 264 ) ( -4528 112 264 ) ( -4528 112 248 ) clip [ 1.8369701987210297e-16 -1 0 -8 ] [ 0 0 -1 72 ] 0 1 1
 }
 }
-// entity 754
+// entity 762
 {
 "classname" "func_breakable"
 "style" "2"
@@ -21439,7 +21503,7 @@
 ( -3120 464 -120 ) ( -3120 864 -120 ) ( -3120 864 -152 ) urb_cp01_blk1 [ 0 -1 0 15.626953 ] [ 0 0 -1 -112 ] 3.2642848 1 1
 }
 }
-// entity 755
+// entity 763
 {
 "classname" "func_breakable"
 "style" "2"
@@ -21455,7 +21519,7 @@
 ( -6496 960 360 ) ( -6496 704 344 ) ( -6496 704 360 ) cliff_03_brwn1 [ 1.8369701987210297e-16 -1 0 -56 ] [ 0 0 -1 40 ] 0 1 1
 }
 }
-// entity 756
+// entity 764
 {
 "classname" "func_breakable"
 "targetname" "fb04a"
@@ -21471,7 +21535,7 @@
 ( -6496 128 360 ) ( -6496 -128 344 ) ( -6496 -128 360 ) cliff_03_brwn1 [ 1.8369701987210297e-16 -1 0 8 ] [ 0 0 -1 40 ] 0 1 1
 }
 }
-// entity 757
+// entity 765
 {
 "classname" "trigger_void"
 "_tb_layer" "1"
@@ -21485,7 +21549,7 @@
 ( -2816 640 -232 ) ( -2816 -192 -264 ) ( -2816 -192 -232 ) trigger [ 0 -1 0 -0.37304688 ] [ 0 0 -1 -32 ] 3.2642848 1 1
 }
 }
-// entity 758
+// entity 766
 {
 "classname" "trigger_once"
 "message" "The sun will never shine."
@@ -21500,7 +21564,7 @@
 ( -1568 1552 88 ) ( -1568 1520 56 ) ( -1568 1520 88 ) trigger [ 0 1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 759
+// entity 767
 {
 "classname" "trigger_multiple"
 "target" "doorpath1"
@@ -21515,7 +21579,7 @@
 ( -2576 576 -8 ) ( -2576 976 -8 ) ( -2576 976 -40 ) trigger [ 0 -1 0 -0.37304688 ] [ 0 0 -1 0 ] 3.2642848 1 1
 }
 }
-// entity 760
+// entity 768
 {
 "classname" "trigger_once"
 "target" "trapdoor2"
@@ -21530,7 +21594,7 @@
 ( -4912 -2240 -1896 ) ( -4912 -2241 -1896 ) ( -4912 -2240 -1895 ) trigger [ 6.123233995736766e-17 -1 0 -32 ] [ 0 0 -1 40 ] 0 1 1
 }
 }
-// entity 761
+// entity 769
 {
 "classname" "trigger_once"
 "target" "secretsquad2"
@@ -21545,7 +21609,7 @@
 ( -5024 -3672 -1536 ) ( -5024 -3688 -1616 ) ( -5024 -3688 -1536 ) trigger [ 0 1 0 -24 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 762
+// entity 770
 {
 "classname" "func_togglevisiblewall"
 "targetname" "dummybutton"
@@ -21561,7 +21625,7 @@
 ( -3212 384 56 ) ( -3212 352 24 ) ( -3212 352 56 ) +0techlight_1 [ -1.2246467991473532e-16 1 0 32 ] [ 0 0 -1 56 ] 0 1 1
 }
 }
-// entity 763
+// entity 771
 {
 "classname" "trigger_textstory"
 "targetname" "dummybuttontts"
@@ -21578,7 +21642,7 @@
 ( -3200 384 56 ) ( -3200 352 24 ) ( -3200 352 56 ) trigger [ -1.2246467991473532e-16 1 0 32 ] [ 0 0 -1 56 ] 0 1 1
 }
 }
-// entity 764
+// entity 772
 {
 "classname" "trigger_once"
 "targetname" "toscare1"
@@ -21595,7 +21659,7 @@
 ( -608 1536 -688 ) ( -608 1536 -687 ) ( -608 1537 -688 ) trigger [ 0 1 0 0 ] [ 0 0 -1 16 ] 0 1 1
 }
 }
-// entity 765
+// entity 773
 {
 "classname" "trigger_textstory"
 "targetname" "t_s03"
@@ -21611,7 +21675,7 @@
 ( -4640 -64 24 ) ( -4640 96 24 ) ( -4640 96 -8 ) trigger [ -6.123233995736766e-17 -1 0 0 ] [ 0 0 -1 32 ] 0 1 1
 }
 }
-// entity 766
+// entity 774
 {
 "classname" "trigger_teleport_instadestination"
 "targetname" "instateledest3"
@@ -21626,7 +21690,7 @@
 ( -2640 680 480 ) ( -2640 679 480 ) ( -2640 680 481 ) trigger [ 6.123233995736766e-17 -1 0 24 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 767
+// entity 775
 {
 "classname" "trigger_teleport_instadestination"
 "targetname" "instateledest4"
@@ -21641,7 +21705,7 @@
 ( -2160 680 480 ) ( -2160 679 480 ) ( -2160 680 481 ) trigger [ 6.123233995736766e-17 -1 0 -40 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 768
+// entity 776
 {
 "classname" "trigger_multiple"
 "target" "doorpath4"
@@ -21656,7 +21720,7 @@
 ( -2608 -320 104 ) ( -2608 -352 -8 ) ( -2608 -352 104 ) trigger [ 0 1 0 -48 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 769
+// entity 777
 {
 "classname" "trigger_multiple"
 "target" "doorpath3"
@@ -21671,7 +21735,7 @@
 ( -3616 -128 104 ) ( -3616 96 -8 ) ( -3616 -128 -8 ) trigger [ -6.123233995736766e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 770
+// entity 778
 {
 "classname" "trigger_multiple"
 "target" "doorpath2"
@@ -21686,7 +21750,7 @@
 ( -3328 624 -8 ) ( -3328 1024 -8 ) ( -3328 1024 -40 ) trigger [ 0 -1 0 47.626953 ] [ 0 0 -1 0 ] 3.2642848 1 1
 }
 }
-// entity 771
+// entity 779
 {
 "classname" "func_togglevisiblewall"
 "targetname" "noreturn4"
@@ -21702,7 +21766,7 @@
 ( -2608 -416 96 ) ( -2608 -560 -16 ) ( -2608 -432 96 ) urb_wp04a_ylw1 [ 0 -1 0 64.62695 ] [ 0 0 -1 -24 ] 3.2642848 1 1
 }
 }
-// entity 772
+// entity 780
 {
 "classname" "func_togglevisiblewall"
 "targetname" "noreturn3"
@@ -21718,7 +21782,7 @@
 ( -3792 -96 96 ) ( -3792 -80 -32 ) ( -3792 -96 -32 ) urb_wp04a_ylw1 [ -6.123233995736766e-17 1 0 96 ] [ 0 0 -1 -24 ] 0 1 1
 }
 }
-// entity 773
+// entity 781
 {
 "classname" "func_togglevisiblewall"
 "targetname" "noreturn2"
@@ -21734,7 +21798,7 @@
 ( -3584 1360 96 ) ( -3584 1376 -32 ) ( -3584 1360 -32 ) urb_wp04a_ylw1 [ -6.123233995736766e-17 1 0 48 ] [ 0 0 -1 -24 ] 0 1 1
 }
 }
-// entity 774
+// entity 782
 {
 "classname" "func_togglevisiblewall"
 "targetname" "noreturn1"
@@ -21750,7 +21814,7 @@
 ( -2576 1392 0 ) ( -2576 1520 -16 ) ( -2576 1392 -16 ) urb_wp04a_gry0 [ -6.123233995736766e-17 -6.123233995736766e-17 1 112.62695 ] [ -6.123233995736766e-17 1 6.123233995736766e-17 -104 ] 93.26428 1 1
 }
 }
-// entity 775
+// entity 783
 {
 "classname" "func_group"
 "_tb_type" "_tb_layer"
@@ -21813,7 +21877,7 @@
 ( -400 2592 0 ) ( -400 2592 1 ) ( -400 2593 0 ) 128_green_3 [ 0 -1 0 16 ] [ 0 0 -1 -112 ] 0 1 1
 }
 }
-// entity 776
+// entity 784
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -21832,7 +21896,7 @@
 ( 448 2688 96 ) ( 448 2672 64 ) ( 448 2672 96 ) techcomp1_grey1 [ 0 1.0000000000000002 0 -444 ] [ 0 0 -1.0000000000000002 287 ] 0 1 1
 }
 }
-// entity 777
+// entity 785
 {
 "classname" "trigger_textstory"
 "message" ""
@@ -21847,7 +21911,7 @@
 ( 448 2688 96 ) ( 448 2672 64 ) ( 448 2672 96 ) trigger [ 0 1.0000000000000002 0 -60 ] [ 0 0 -1.0000000000000002 31 ] 0 1 1
 }
 }
-// entity 778
+// entity 786
 {
 "classname" "func_button"
 "target" "doorx"
@@ -21863,7 +21927,7 @@
 ( 144 2624 112 ) ( 144 2656 80 ) ( 144 2624 80 ) +0techlight_1 [ -6.123233995736767e-17 1.0000000000000002 0 -163 ] [ 0 0 -1.0000000000000002 112 ] 0 1 1
 }
 }
-// entity 779
+// entity 787
 {
 "classname" "func_button"
 "target" "doorx"
@@ -21879,7 +21943,7 @@
 ( -48 2800 112 ) ( -48 2832 80 ) ( -48 2800 80 ) +0techlight_1 [ -6.123233995736767e-17 1.0000000000000002 0 -339 ] [ 0 0 -1.0000000000000002 112 ] 0 1 1
 }
 }
-// entity 780
+// entity 788
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -21889,7 +21953,7 @@
 "_tb_transformation" "1 0 0 3136 0 1 0 2960 0 0 1 -104 0 0 0 1"
 "_tb_layer" "2"
 }
-// entity 781
+// entity 789
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -21899,7 +21963,7 @@
 "_tb_transformation" "1 0 0 3136 0 1 0 2960 0 0 1 -104 0 0 0 1"
 "_tb_group" "6"
 }
-// entity 782
+// entity 790
 {
 "classname" "func_door"
 "angle" "-1"
@@ -21954,7 +22018,7 @@
 ( 280 2816 80 ) ( 272 2944 72 ) ( 272 2816 72 ) techdoor_grey1 [ -0.7071067811865476 0 -0.7071067811865476 -48.052246 ] [ 0 -1 0 352 ] 270 1 1
 }
 }
-// entity 783
+// entity 791
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -21964,7 +22028,7 @@
 "_tb_transformation" "1 0 0 3136 0 1 0 2960 0 0 1 -104 0 0 0 1"
 "_tb_group" "6"
 }
-// entity 784
+// entity 792
 {
 "classname" "func_door"
 "spawnflags" "4"
@@ -22009,7 +22073,7 @@
 ( 368 2800 200 ) ( 368 2799 200 ) ( 368 2800 201 ) techdoor_grey1 [ 3.3306690738754696e-16 -1 1.8369701987210302e-16 231 ] [ -6.123233995736762e-17 -1.8369701987210302e-16 -1.0000000000000002 -477 ] 90 1 1
 }
 }
-// entity 785
+// entity 793
 {
 "classname" "func_button"
 "target" "doorx"
@@ -22025,7 +22089,7 @@
 ( 64 2800 112 ) ( 64 2832 80 ) ( 64 2800 80 ) +0techlight_1 [ -6.123233995736767e-17 1.0000000000000002 0 -339 ] [ 0 0 -1.0000000000000002 112 ] 0 1 1
 }
 }
-// entity 786
+// entity 794
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -22035,7 +22099,7 @@
 "_tb_transformation" "1 0 0 -64 0 1 0 -64 0 0 1 0 0 0 0 1"
 "_tb_layer" "2"
 }
-// entity 787
+// entity 795
 {
 "classname" "func_detail"
 "_tb_group" "21"
@@ -22049,7 +22113,7 @@
 ( -16 2688 96 ) ( -16 2672 64 ) ( -16 2672 96 ) techcomp1_grey1 [ 0 1.0000000000000002 0 -444 ] [ 0 0 -1.0000000000000002 287 ] 0 1 1
 }
 }
-// entity 788
+// entity 796
 {
 "classname" "trigger_textstory"
 "_tb_group" "21"
@@ -22063,14 +22127,14 @@
 ( -16 2680 96 ) ( -16 2664 64 ) ( -16 2664 96 ) trigger [ 0 1 0 -60 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 789
+// entity 797
 {
 "classname" "item_shells"
 "origin" "-2352 -304 -8"
 "spawnflags" "1"
 "_tb_layer" "2"
 }
-// entity 790
+// entity 798
 {
 "classname" "func_detail"
 "_tb_layer" "2"
@@ -22084,7 +22148,7 @@
 ( -322 2840 168 ) ( -322 2840 167 ) ( -322 2839 168 ) urb_wp01a_ylw1 [ -6.123233995736766e-17 1 1.2246467991473532e-16 -360 ] [ 1.4997597826618576e-32 -1.2246467991473532e-16 1 120 ] 180 1 1
 }
 }
-// entity 791
+// entity 799
 {
 "classname" "func_group"
 "_tb_type" "_tb_layer"
@@ -23242,7 +23306,7 @@
 ( -560 -1403 -106 ) ( -560 -1403 -105 ) ( -560 -1402 -106 ) *tele01 [ 3.749399456654644e-33 1 -6.123233995736766e-17 0 ] [ 6.123233995736766e-17 -6.123233995736766e-17 -1 0 ] 270 1 1
 }
 }
-// entity 792
+// entity 800
 {
 "classname" "func_button"
 "target" "artemisa"
@@ -23258,7 +23322,7 @@
 ( 1364 -1766 12 ) ( 1364 -1765 12 ) ( 1364 -1766 11 ) +0button [ 3.005046801199316e-23 0.9999999999998794 -4.907613851343195e-07 -16 ] [ 6.123233995736026e-17 -4.907613851343195e-07 -0.9999999999998794 5.999136 ] 270.00003 1 1
 }
 }
-// entity 793
+// entity 801
 {
 "classname" "func_door"
 "targetname" "artemisa"
@@ -23278,7 +23342,7 @@
 ( 1380 -1973 156 ) ( 1380 -1955 135 ) ( 1380 -1955 -26 ) adoor03_2 [ 0 1 0 32 ] [ 0 0 -1 -26 ] 0 1 1
 }
 }
-// entity 794
+// entity 802
 {
 "classname" "func_door"
 "targetname" "artemisa"
@@ -23300,7 +23364,7 @@
 ( 1380 -2042 166 ) ( 1380 -2015 166 ) ( 1380 -2015 -26 ) adoor03_2 [ 0 1 0 32 ] [ 0 0 -1 -26 ] 0 1 1
 }
 }
-// entity 795
+// entity 803
 {
 "classname" "trigger_once"
 "message" "Thank you for freeing us."
@@ -23316,7 +23380,7 @@
 ( -332 -1827 36 ) ( -332 -1827 37 ) ( -332 -1826 36 ) trigger [ 0 1 0 35 ] [ 0 0 -1 -28 ] 0 1 1
 }
 }
-// entity 796
+// entity 804
 {
 "classname" "trigger_once"
 "target" "tsp04"
@@ -23333,7 +23397,7 @@
 ( 864 -1940 -20 ) ( 864 -1940 -19 ) ( 864 -1939 -20 ) trigger [ 0 1 0 44 ] [ 0 0 -1 -36 ] 0 1 1
 }
 }
-// entity 797
+// entity 805
 {
 "classname" "trigger_once"
 "message" "Open the door and Banish her."
