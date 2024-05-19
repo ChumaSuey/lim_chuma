@@ -17,7 +17,6 @@
 "_bounce" "1"
 "_dirt" "1"
 "_sunlight3" "100"
-"_tb_layer_hidden" "1"
 // brush 0
 {
 ( -64 -64 -16 ) ( -64 -63 -16 ) ( -64 -64 -15 ) urb_cp01_wht1 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -20024,7 +20023,6 @@
 "_tb_name" "aux"
 "_tb_id" "1"
 "_tb_layer_sort_index" "0"
-"_tb_layer_hidden" "1"
 // brush 0
 {
 ( -1456 240 -128 ) ( -1456 400 -208 ) ( -1456 400 -128 ) *waterskip [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -20754,7 +20752,6 @@
 "_tb_name" "assets"
 "_tb_id" "2"
 "_tb_layer_sort_index" "1"
-"_tb_layer_hidden" "1"
 "_tb_layer_omit_from_export" "1"
 // brush 0
 {
