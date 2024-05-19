@@ -5,7 +5,8 @@ There's a small instruction and detail / spoilery below, you can read it to get 
 ### Author info
 
 Map name : Anomalous Sunshine of an Alternate Timeline.
-Author : Chuma
+
+Author : Chuma.
 
 ### How to play it? and General instructions/context/technical details
 
