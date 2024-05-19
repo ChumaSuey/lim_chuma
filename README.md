@@ -35,6 +35,8 @@ During the first phase of the map DO NOT attack or fight the enemies, there's no
 - Mopey Bloke (playtesting and feedback).
 - Forte (playtesting and feedback).
 - Yuyi and Alunadrern (playtesting and FOG/Sky values).
+- 66pt99 (playtesting and feedback).
+- Em3raldtiger (playtesting and feedback).
 - Admer (correction in the lore notes).
 
 Music tracks used:
@@ -65,7 +67,7 @@ The Most Mysterious song on the internet is a weird case but it's author hasn't 
 - AlexUnder
 - PyroGXPilot
 - Mikolah.
-- Riktoi.
+- riktoi.
 - Damaec
 - Dany
 - Nepta
