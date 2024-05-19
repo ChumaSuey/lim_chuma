@@ -43,7 +43,7 @@ During the first phase of the map DO NOT attack or fight the enemies, there's no
 Music tracks used:
 Repulsive - Departure.
 Repulsive - 1908 Vol 1 (Vol I).
-The most mysterious song on the internet by the most mysterious band (i hope i can get to change this when they find the song's author)
+The most mysterious song on the internet by the most mysterious band (i hope i can get to change this when they find the song's author).
 
 Repulsive tracks are copyright free.
 
