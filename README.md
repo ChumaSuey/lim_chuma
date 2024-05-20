@@ -85,7 +85,7 @@ This map was fun to make, Alkaline is a powerful mod, and a special thanks to bm
 Music tracks used:
 - "Departure" - Repulsive.
 - "1908" (1908 Vol I / Vol 1) - Repulsive.
-- "The most mysterious song on the internet" - the most mysterious band (i hope i can get to change this when they find the song's author).
+- "The most mysterious song on the internet" - the most mysterious band (i hope i can get to change this metadata/info when they find the song's author).
 
 In technicality it's an unknown song by an unknown author, i hope it gets found.
 respective thanks to aufr33 and Rave Ghetto Blaster for their remastered versions of "The most mysterious song on the internet".
