@@ -54,11 +54,19 @@ I added a jumppad that should work to get your weapons back if you failed to mis
 
 Map also has 2 target_autosaves (Alkaline saves) for preventing incidents of complex level finishing or level restart.
 
+2 ideas that were scrapped from the map are:
 
+- In the final fight section all the enemies you encountered through will be the ones you will fight for, i had the idea that if you kill in the phase 1 any of these enemies they will not spawn in the final fight section / area, while this was possible and it required a killtarget to the enemies that would appear later, it'd had no purpose since the enemies in phase 1 in normal circumstances are unkillable, if so i'd have to redesign the first phase of the map, something i decided not to do.
 
+- In Path 4 you could may have gotten softlocked by ignoring the Circuit board, my plan was to make a some sort of joke where if the player didn't grab the Circuit board, they'll get one back in the Core room with the message "Lol almost softlocked" (i took note of it in my notebook and it was possible in design-scripting logic), while fun, i feel the map is serious enough for not having these "jokes", at least not in this map.
+
+So finishing up, talking about the inclusion of Urantia, i've been willing to remake my first map in a big mod with the mapping knowledge i have now, i decided to include that segment as a some sort of scare, the meaning could be that somehow Urantia's planet where she was defeated crossed paths within the teleporters and her ghost was trying to Haunt Ranger, i almost included some segments state enabling and disabling player dead bodies but since i used that feature "twice" i think that was enough of it.
+
+This map was fun to make, Alkaline is a powerful mod, and a special thanks to bmFbr for helping me always, and all of you friends for the feedback, thank you so much, hope you enjoyed my liminal map entry!
 
 ### Special Credits section:
 - bmFbr (Quake mapping/coding wizardry).
+- CommonCold (Quake mapping/coding wizardry/playtesting/feedback and also for hosting this jam).
 - Paril (Quake mapping/coding wizardry).
 - Phoenyx (Audio production).
 - Makkon (Textures).
