@@ -36,6 +36,8 @@ I'm proud of how much work i've put into this map but well, let's get rolling:
 
 For a while i had the idea of using The Mysterious Song on the internet, just a small scare sequence of the map playing within a radio, trapping the player and sliding it down into a fight... i always had this sequence in mind, in my notebook of sketches this map was called "The sun will never shine" and it was thought for a possible Progs dump speedmapping. When the Liminal jam was proposed i knew i could workout this concept within the level... altho the idea of using the mysterious song as a sound effect was discarded since it wouldn't sound right.
 
+About the mysterious song on the internet "version" for this map : The sequence has always been envisioned in my head so i asked my friend Phoenyx (close friend from the Doom community who also composes and have audio production knowledge) to mix The mysterious song remastered version by aufr33 and Rave Ghetto Blaster, Ghetto version starting guitar riff can be heard in the first 2 seconds and then the remastered song by aufr33 can be heard until it's finished and loops (special thanks to aufr33 and Rave Ghetto Blaster for their respective remastered versions).
+
 This is the first map i've managed to use references for my levels, so the map started to get made based on the previous short concept + the idea of going through different non-linear non-returnable areas that are backrooms, merging up both concepts into one : A first phase of backroom exploration, and a second phase of a "mall" fight (if i could call the second phase area as a mall).
 
 The areas are path 1 to 4 counter-clockwise (this was completely unintentional but well... it works)
@@ -81,9 +83,12 @@ This map was fun to make, Alkaline is a powerful mod, and a special thanks to bm
 - DEvSEb (playtesting and feedback). 
 
 Music tracks used:
-Repulsive - Departure.
-Repulsive - 1908 Vol 1 (Vol I).
-The most mysterious song on the internet by the most mysterious band (i hope i can get to change this when they find the song's author).
+- "Departure" - Repulsive.
+- "1908" (1908 Vol I / Vol 1) - Repulsive.
+- "The most mysterious song on the internet" - the most mysterious band (i hope i can get to change this when they find the song's author).
+
+In technicality it's an unknown song by an unknown author, i hope it gets found.
+respective thanks to aufr33 and Rave Ghetto Blaster for their remastered versions of "The most mysterious song on the internet".
 
 Repulsive tracks are copyright free.
 
