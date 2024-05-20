@@ -39,6 +39,8 @@ During the first phase of the map DO NOT attack or fight the enemies, there's no
 - 66pt99 (playtesting and feedback).
 - Em3raldtiger (playtesting and feedback).
 - Admer (correction in the lore notes).
+- Lobotomy-Lobster (playtesting and feedback).
+- DEvSEb (playtesting and feedback). 
 
 Music tracks used:
 Repulsive - Departure.
