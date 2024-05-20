@@ -10804,7 +10804,7 @@
 {
 ( -4864 -64 24 ) ( -4864 96 -8 ) ( -4864 96 24 ) conc_w01_gry1 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( -2880 3408 24 ) ( -2880 3408 -8 ) ( -3520 3408 -8 ) urb_wp01a_ylw1 [ 1 -6.123233995736766e-17 0 -0.37304688 ] [ 0 0 -1 0 ] 3.2642848 1 1
-( -2880 96 128 ) ( -3520 96 128 ) ( -3520 -64 128 ) conc_w01_gry1 [ -1 0 0 0 ] [ -0 -1 0 0 ] 0 1 1
+( -2880 96 128 ) ( -3520 96 128 ) ( -3520 -64 128 ) urb_wp02a_ylw1 [ 6.123233995736766e-17 1 0 -112 ] [ 1 -6.123233995736766e-17 0 48 ] 270 1 1
 ( -2880 96 144 ) ( -3520 -64 144 ) ( -3520 96 144 ) conc_w01_gry1 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
 ( -2880 3424 24 ) ( -3520 3424 -8 ) ( -2880 3424 -8 ) conc_w01_gry1 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( -4624 -64 24 ) ( -4624 96 24 ) ( -4624 96 -8 ) conc_w01_gry1 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -12407,6 +12407,7 @@
 "target" "noreturn4"
 "killtarget" "calmnpc2"
 "target2" "lvpath4"
+"target3" "softlockpath4"
 // brush 0
 {
 ( -4672 -928 -288 ) ( -4672 -928 -287 ) ( -4672 -929 -288 ) trigger [ 6.123233995736766e-17 -1 0 16 ] [ 0 0 -1 0 ] 0 1 1
@@ -12966,6 +12967,7 @@
 "target" "noreturn1"
 "target2" "tr01k"
 "target3" "lvpath1"
+"target4" "softlockpath1"
 // brush 0
 {
 ( -192 1600 -528 ) ( -192 1216 -528 ) ( -192 1216 -544 ) trigger [ 0 1 0 0 ] [ 0 0 -1 48 ] 0 1 1
@@ -13191,6 +13193,7 @@
 "target" "noreturn2"
 "target2" "tr02k1"
 "target3" "lvpath2"
+"target4" "softlockpath2"
 // brush 0
 {
 ( -4808 3792 168 ) ( -4808 3408 168 ) ( -4808 3408 152 ) trigger [ 0 1 0 48 ] [ 0 0 -1 -24 ] 0 1 1
@@ -13943,6 +13946,7 @@
 "target" "noreturn3"
 "target2" "tr03k"
 "target3" "lvpath3"
+"target4" "softlockpath3"
 // brush 0
 {
 ( -7736 144 536 ) ( -7736 -240 536 ) ( -7736 -240 520 ) trigger [ 0 1 0 48 ] [ 0 0 -1 -40 ] 0 1 1
@@ -17468,6 +17472,7 @@
 "classname" "trigger_once"
 "target" "l08a"
 "target2" "t_s08"
+"target3" "l08as"
 // brush 0
 {
 ( -3792 1136 24 ) ( -3792 1136 -8 ) ( -3792 1776 -8 ) trigger [ 0 -1 0 -16.373047 ] [ 0 0 -1 32 ] 3.2642848 1 1
@@ -18086,7 +18091,7 @@
 "speed" "150"
 "wait" "4"
 "spawnflags" "4"
-"message" "doorpath3"
+"targetname" "doorpath3"
 "_tb_group" "10"
 // brush 0
 {
@@ -18639,7 +18644,7 @@
 {
 "classname" "play_sound_triggered"
 "origin" "-3720 1432 52"
-"targetname" "l08a"
+"targetname" "l08as"
 "noise" "alk_grome/default_stop_hl2.wav"
 }
 // entity 590
@@ -20023,6 +20028,84 @@
 }
 // entity 689
 {
+"classname" "trigger_multiple"
+"targetname" "softlockpath4"
+"target" "doorpath4"
+"is_waiting" "1"
+// brush 0
+{
+( -2864 -352 104 ) ( -2864 -320 -8 ) ( -2864 -320 104 ) trigger [ 0 -1 0 48 ] [ 0 0 -1 0 ] 0 1 1
+( -2624 -384 104 ) ( -2848 -384 -8 ) ( -2848 -384 104 ) trigger [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -2624 -320 -8 ) ( -2848 -352 -8 ) ( -2624 -352 -8 ) trigger [ -1 0 0 0 ] [ 0 -1 0 48 ] 0 1 1
+( -2624 -320 112 ) ( -2848 -352 112 ) ( -2848 -320 112 ) trigger [ 1 0 0 0 ] [ 0 -1 0 48 ] 0 1 1
+( -2624 -320 104 ) ( -2848 -320 104 ) ( -2848 -320 -8 ) trigger [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -2608 -320 104 ) ( -2608 -352 -8 ) ( -2608 -352 104 ) trigger [ 0 1 0 -48 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 690
+{
+"classname" "trigger_multiple"
+"targetname" "softlockpath3"
+"target" "doorpath3"
+"is_waiting" "1"
+// brush 0
+{
+( -3776 -128 104 ) ( -3776 96 -8 ) ( -3776 96 104 ) trigger [ 6.123233995736766e-17 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -3712 -144 104 ) ( -3744 -144 -8 ) ( -3744 -144 104 ) trigger [ 1 6.123233995736766e-17 0 -48 ] [ 0 0 -1 0 ] 0 1 1
+( -3712 -128 -8 ) ( -3744 96 -8 ) ( -3744 -128 -8 ) trigger [ -6.123233995736766e-17 1 0 0 ] [ -1 -6.123233995736766e-17 0 48 ] 270 1 1
+( -3712 -128 112 ) ( -3744 96 112 ) ( -3712 96 112 ) trigger [ 6.123233995736766e-17 -1 0 0 ] [ -1 -6.123233995736766e-17 0 48 ] 90 1 1
+( -3744 112 104 ) ( -3712 112 -8 ) ( -3712 112 104 ) trigger [ -1 -6.123233995736766e-17 0 48 ] [ 0 0 -1 0 ] 0 1 1
+( -3712 -128 104 ) ( -3712 96 104 ) ( -3712 96 -8 ) trigger [ 6.123233995736766e-17 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 691
+{
+"classname" "trigger_multiple"
+"targetname" "softlockpath2"
+"target" "doorpath2"
+"is_waiting" "1"
+// brush 0
+{
+( -3584 960 104 ) ( -3584 992 -8 ) ( -3584 992 104 ) trigger [ 1.2246467991473532e-16 -1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( -3568 960 104 ) ( -3344 960 104 ) ( -3344 960 -8 ) trigger [ -1 -1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( -3568 960 -8 ) ( -3344 992 -8 ) ( -3568 992 -8 ) trigger [ 1 1.2246467991473532e-16 0 -16 ] [ -1.2246467991473532e-16 1 0 -16 ] 180 1 1
+( -3568 960 112 ) ( -3344 992 112 ) ( -3344 960 112 ) trigger [ -1 -1.2246467991473532e-16 0 16 ] [ -1.2246467991473532e-16 1 0 -16 ] 180 1 1
+( -3568 1024 104 ) ( -3344 1024 -8 ) ( -3344 1024 104 ) trigger [ -1 -1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( -3328 992 104 ) ( -3328 960 -8 ) ( -3328 960 104 ) trigger [ -1.2246467991473532e-16 1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 692
+{
+"classname" "trigger_multiple"
+"targetname" "softlockpath1"
+"target" "doorpath1"
+"is_waiting" "1"
+// brush 0
+{
+( -2832 880 104 ) ( -2832 912 -8 ) ( -2832 912 104 ) trigger [ 1.2246467991473532e-16 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -2816 880 104 ) ( -2592 880 104 ) ( -2592 880 -8 ) trigger [ -1 -1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -2816 880 -8 ) ( -2592 912 -8 ) ( -2816 912 -8 ) trigger [ 1 1.2246467991473532e-16 0 0 ] [ -1.2246467991473532e-16 1 0 0 ] 180 1 1
+( -2816 880 112 ) ( -2592 912 112 ) ( -2592 880 112 ) trigger [ -1 -1.2246467991473532e-16 0 0 ] [ -1.2246467991473532e-16 1 0 0 ] 180 1 1
+( -2816 944 104 ) ( -2592 944 -8 ) ( -2592 944 104 ) trigger [ -1 -1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -2576 912 104 ) ( -2576 880 -8 ) ( -2576 880 104 ) trigger [ -1.2246467991473532e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 693
+{
+"classname" "trigger_once"
+"target" "l08a"
+// brush 0
+{
+( -4808 3552 -40 ) ( -4808 3568 -88 ) ( -4808 3568 -40 ) trigger [ 0 -1 0 0 ] [ 0 0 -1 -8 ] 0 1 1
+( -4712 3536 -40 ) ( -4856 3536 -88 ) ( -4856 3536 -40 ) trigger [ 1 0 0 40 ] [ 0 0 -1 -8 ] 0 1 1
+( -4712 3568 -88 ) ( -4856 3552 -88 ) ( -4712 3552 -88 ) trigger [ -1 0 0 -40 ] [ 0 -1 0 0 ] 0 1 1
+( -4712 3568 -72 ) ( -4856 3552 -72 ) ( -4856 3568 -72 ) trigger [ 1 0 0 40 ] [ 0 -1 0 0 ] 0 1 1
+( -4712 3632 -40 ) ( -4856 3632 -88 ) ( -4712 3632 -88 ) trigger [ -1 0 0 -40 ] [ 0 0 -1 -8 ] 0 1 1
+( -4696 3568 -40 ) ( -4696 3552 -88 ) ( -4696 3552 -40 ) trigger [ 0 1 0 0 ] [ 0 0 -1 -8 ] 0 1 1
+}
+}
+// entity 694
+{
 "classname" "func_group"
 "_tb_type" "_tb_layer"
 "_tb_name" "aux"
@@ -20155,7 +20238,7 @@
 ( -3072 448 -8 ) ( -3072 512 -24 ) ( -3072 448 -24 ) clip [ -6.123233995736766e-17 1 0 0 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 690
+// entity 695
 {
 "classname" "func_breakable"
 "style" "2"
@@ -20171,7 +20254,7 @@
 ( -3120 464 -120 ) ( -3120 864 -120 ) ( -3120 864 -152 ) urb_cp01_blk1 [ 0 -1 0 15.626953 ] [ 0 0 -1 -112 ] 3.2642848 1 1
 }
 }
-// entity 691
+// entity 696
 {
 "classname" "func_breakable"
 "style" "2"
@@ -20187,7 +20270,7 @@
 ( -6496 960 360 ) ( -6496 704 344 ) ( -6496 704 360 ) cliff_03_brwn1 [ 1.8369701987210297e-16 -1 0 -56 ] [ 0 0 -1 40 ] 0 1 1
 }
 }
-// entity 692
+// entity 697
 {
 "classname" "func_breakable"
 "targetname" "fb04a"
@@ -20203,7 +20286,7 @@
 ( -6496 128 360 ) ( -6496 -128 344 ) ( -6496 -128 360 ) cliff_03_brwn1 [ 1.8369701987210297e-16 -1 0 8 ] [ 0 0 -1 40 ] 0 1 1
 }
 }
-// entity 693
+// entity 698
 {
 "classname" "trigger_void"
 "_tb_layer" "1"
@@ -20217,7 +20300,7 @@
 ( -2816 640 -232 ) ( -2816 -192 -264 ) ( -2816 -192 -232 ) trigger [ 0 -1 0 -0.37304688 ] [ 0 0 -1 -32 ] 3.2642848 1 1
 }
 }
-// entity 694
+// entity 699
 {
 "classname" "trigger_once"
 "message" "The sun will never shine."
@@ -20232,7 +20315,7 @@
 ( -1568 1552 88 ) ( -1568 1520 56 ) ( -1568 1520 88 ) trigger [ 0 1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 695
+// entity 700
 {
 "classname" "trigger_multiple"
 "target" "doorpath1"
@@ -20243,11 +20326,11 @@
 ( 352 800 -8 ) ( 160 800 -40 ) ( 160 800 -8 ) trigger [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 352 976 -8 ) ( 160 976 -8 ) ( 160 576 -8 ) trigger [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
 ( 352 976 120 ) ( 160 576 120 ) ( 160 976 120 ) trigger [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 352 880 -8 ) ( 160 880 -8 ) ( 160 880 -40 ) trigger [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 352 864 -8 ) ( 160 864 -8 ) ( 160 864 -40 ) trigger [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( -2576 576 -8 ) ( -2576 976 -8 ) ( -2576 976 -40 ) trigger [ 0 -1 0 -0.37304688 ] [ 0 0 -1 0 ] 3.2642848 1 1
 }
 }
-// entity 696
+// entity 701
 {
 "classname" "trigger_once"
 "target" "trapdoor2"
@@ -20262,7 +20345,7 @@
 ( -4912 -2240 -1896 ) ( -4912 -2241 -1896 ) ( -4912 -2240 -1895 ) trigger [ 6.123233995736766e-17 -1 0 -32 ] [ 0 0 -1 40 ] 0 1 1
 }
 }
-// entity 697
+// entity 702
 {
 "classname" "trigger_once"
 "target" "secretsquad2"
@@ -20277,7 +20360,7 @@
 ( -5024 -3672 -1536 ) ( -5024 -3688 -1616 ) ( -5024 -3688 -1536 ) trigger [ 0 1 0 -24 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 698
+// entity 703
 {
 "classname" "func_togglevisiblewall"
 "targetname" "dummybutton"
@@ -20293,7 +20376,7 @@
 ( -3212 384 56 ) ( -3212 352 24 ) ( -3212 352 56 ) +0techlight_1 [ -1.2246467991473532e-16 1 0 32 ] [ 0 0 -1 56 ] 0 1 1
 }
 }
-// entity 699
+// entity 704
 {
 "classname" "trigger_textstory"
 "targetname" "dummybuttontts"
@@ -20310,7 +20393,7 @@
 ( -3200 384 56 ) ( -3200 352 24 ) ( -3200 352 56 ) trigger [ -1.2246467991473532e-16 1 0 32 ] [ 0 0 -1 56 ] 0 1 1
 }
 }
-// entity 700
+// entity 705
 {
 "classname" "trigger_once"
 "targetname" "toscare1"
@@ -20327,7 +20410,7 @@
 ( -608 1536 -688 ) ( -608 1536 -687 ) ( -608 1537 -688 ) trigger [ 0 1 0 0 ] [ 0 0 -1 16 ] 0 1 1
 }
 }
-// entity 701
+// entity 706
 {
 "classname" "trigger_textstory"
 "targetname" "t_s03"
@@ -20343,7 +20426,7 @@
 ( -4640 -64 24 ) ( -4640 96 24 ) ( -4640 96 -8 ) trigger [ -6.123233995736766e-17 -1 0 0 ] [ 0 0 -1 32 ] 0 1 1
 }
 }
-// entity 702
+// entity 707
 {
 "classname" "trigger_teleport_instadestination"
 "targetname" "instateledest3"
@@ -20358,7 +20441,7 @@
 ( -2640 680 480 ) ( -2640 679 480 ) ( -2640 680 481 ) trigger [ 6.123233995736766e-17 -1 0 24 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 703
+// entity 708
 {
 "classname" "trigger_teleport_instadestination"
 "targetname" "instateledest4"
@@ -20373,7 +20456,7 @@
 ( -2160 680 480 ) ( -2160 679 480 ) ( -2160 680 481 ) trigger [ 6.123233995736766e-17 -1 0 -40 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 704
+// entity 709
 {
 "classname" "trigger_multiple"
 "target" "doorpath4"
@@ -20388,7 +20471,7 @@
 ( -2608 -320 104 ) ( -2608 -352 -8 ) ( -2608 -352 104 ) trigger [ 0 1 0 -48 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 705
+// entity 710
 {
 "classname" "trigger_multiple"
 "target" "doorpath3"
@@ -20403,7 +20486,7 @@
 ( -3616 -128 104 ) ( -3616 96 -8 ) ( -3616 -128 -8 ) trigger [ -6.123233995736766e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 706
+// entity 711
 {
 "classname" "trigger_multiple"
 "target" "doorpath2"
@@ -20418,7 +20501,7 @@
 ( -3328 624 -8 ) ( -3328 1024 -8 ) ( -3328 1024 -40 ) trigger [ 0 -1 0 47.626953 ] [ 0 0 -1 0 ] 3.2642848 1 1
 }
 }
-// entity 707
+// entity 712
 {
 "classname" "func_togglevisiblewall"
 "targetname" "noreturn4"
@@ -20434,7 +20517,7 @@
 ( -2608 -416 96 ) ( -2608 -560 -16 ) ( -2608 -432 96 ) urb_wp04a_ylw1 [ 0 -1 0 64.62695 ] [ 0 0 -1 -24 ] 3.2642848 1 1
 }
 }
-// entity 708
+// entity 713
 {
 "classname" "func_togglevisiblewall"
 "targetname" "noreturn3"
@@ -20450,7 +20533,7 @@
 ( -3792 -96 96 ) ( -3792 -80 -32 ) ( -3792 -96 -32 ) urb_wp04a_ylw1 [ -6.123233995736766e-17 1 0 96 ] [ 0 0 -1 -24 ] 0 1 1
 }
 }
-// entity 709
+// entity 714
 {
 "classname" "func_togglevisiblewall"
 "targetname" "noreturn2"
@@ -20466,7 +20549,7 @@
 ( -3584 1360 96 ) ( -3584 1376 -32 ) ( -3584 1360 -32 ) urb_wp04a_ylw1 [ -6.123233995736766e-17 1 0 48 ] [ 0 0 -1 -24 ] 0 1 1
 }
 }
-// entity 710
+// entity 715
 {
 "classname" "func_togglevisiblewall"
 "targetname" "noreturn1"
@@ -20482,7 +20565,7 @@
 ( -2576 1392 0 ) ( -2576 1520 -16 ) ( -2576 1392 -16 ) urb_wp04a_gry0 [ -6.123233995736766e-17 -6.123233995736766e-17 1 112.62695 ] [ -6.123233995736766e-17 1 6.123233995736766e-17 -104 ] 93.26428 1 1
 }
 }
-// entity 711
+// entity 716
 {
 "classname" "func_door"
 "wait" "-1"
@@ -20530,7 +20613,7 @@
 ( -3056 448 -8 ) ( -3056 512 -24 ) ( -3056 448 -24 ) techflat1_grey1 [ -6.123233995736766e-17 1 0 0 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 712
+// entity 717
 {
 "classname" "func_door"
 "sounds" "6"
@@ -20569,7 +20652,7 @@
 ( -3264 192 -8 ) ( -3328 256 120 ) ( -3328 256 -8 ) techflat1_grey1 [ 0.7071067811865476 -0.7071067811865476 0 0 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 713
+// entity 718
 {
 "classname" "func_door"
 "angle" "-1"
@@ -20590,7 +20673,7 @@
 ( -3072 448 -8 ) ( -3072 512 -24 ) ( -3072 448 -24 ) techflat1_grey1 [ -6.123233995736766e-17 1 0 0 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 714
+// entity 719
 {
 "classname" "func_door"
 "wait" "-1"
@@ -20610,7 +20693,7 @@
 ( -3296 448 -8 ) ( -3296 512 -8 ) ( -3296 512 -24 ) clip [ 6.123233995736766e-17 -1 0 0 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 715
+// entity 720
 {
 "classname" "func_door"
 "wait" "-1"
@@ -20630,7 +20713,7 @@
 ( -3064 360 -8 ) ( -3128 424 120 ) ( -3128 424 -8 ) clip [ -0.7071067811865476 0.7071067811865476 0 -41.37256 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 716
+// entity 721
 {
 "classname" "func_door"
 "distance" "336"
@@ -20650,7 +20733,7 @@
 ( -3104 432 -8 ) ( -3104 496 -24 ) ( -3104 432 -24 ) clip [ -6.123233995736766e-17 1 0 16 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 717
+// entity 722
 {
 "classname" "func_door"
 "wait" "-1"
@@ -20670,7 +20753,7 @@
 ( -3088 448 -8 ) ( -3088 512 -24 ) ( -3088 448 -24 ) clip [ -6.123233995736766e-17 1 0 0 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 718
+// entity 723
 {
 "classname" "func_door"
 "distance" "336"
@@ -20690,7 +20773,7 @@
 ( -3248 432 -8 ) ( -3312 368 -8 ) ( -3312 368 120 ) clip [ -0.7071067811865476 -0.7071067811865476 0 0 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 719
+// entity 724
 {
 "classname" "func_door"
 "wait" "-1"
@@ -20710,7 +20793,7 @@
 ( -3064 280 -8 ) ( -3128 216 -8 ) ( -3128 216 120 ) clip [ 0.7071067811865476 0.7071067811865476 0 -86.62744 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 720
+// entity 725
 {
 "classname" "func_door"
 "angle" "-1"
@@ -20730,7 +20813,7 @@
 ( -3088 464 -8 ) ( -3088 528 -24 ) ( -3088 464 -24 ) clip [ -6.123233995736766e-17 1 0 -16 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 721
+// entity 726
 {
 "classname" "func_door"
 "distance" "336"
@@ -20750,7 +20833,7 @@
 ( -3248 208 -8 ) ( -3312 272 120 ) ( -3312 272 -8 ) clip [ 0.7071067811865476 -0.7071067811865476 0 0 ] [ 0 0 -1 8 ] 0 1 1
 }
 }
-// entity 722
+// entity 727
 {
 "classname" "func_group"
 "_tb_type" "_tb_layer"
@@ -20813,7 +20896,7 @@
 ( -400 2592 0 ) ( -400 2592 1 ) ( -400 2593 0 ) 128_green_3 [ 0 -1 0 16 ] [ 0 0 -1 -112 ] 0 1 1
 }
 }
-// entity 723
+// entity 728
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -20832,7 +20915,7 @@
 ( 448 2688 96 ) ( 448 2672 64 ) ( 448 2672 96 ) techcomp1_grey1 [ 0 1.0000000000000002 0 -444 ] [ 0 0 -1.0000000000000002 287 ] 0 1 1
 }
 }
-// entity 724
+// entity 729
 {
 "classname" "trigger_textstory"
 "message" ""
@@ -20847,7 +20930,7 @@
 ( 448 2688 96 ) ( 448 2672 64 ) ( 448 2672 96 ) trigger [ 0 1.0000000000000002 0 -60 ] [ 0 0 -1.0000000000000002 31 ] 0 1 1
 }
 }
-// entity 725
+// entity 730
 {
 "classname" "func_button"
 "target" "doorx"
@@ -20863,7 +20946,7 @@
 ( 144 2624 112 ) ( 144 2656 80 ) ( 144 2624 80 ) +0techlight_1 [ -6.123233995736767e-17 1.0000000000000002 0 -163 ] [ 0 0 -1.0000000000000002 112 ] 0 1 1
 }
 }
-// entity 726
+// entity 731
 {
 "classname" "func_button"
 "target" "doorx"
@@ -20879,7 +20962,7 @@
 ( -48 2800 112 ) ( -48 2832 80 ) ( -48 2800 80 ) +0techlight_1 [ -6.123233995736767e-17 1.0000000000000002 0 -339 ] [ 0 0 -1.0000000000000002 112 ] 0 1 1
 }
 }
-// entity 727
+// entity 732
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -20889,7 +20972,7 @@
 "_tb_transformation" "1 0 0 3136 0 1 0 2960 0 0 1 -104 0 0 0 1"
 "_tb_layer" "2"
 }
-// entity 728
+// entity 733
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -20899,7 +20982,7 @@
 "_tb_transformation" "1 0 0 3136 0 1 0 2960 0 0 1 -104 0 0 0 1"
 "_tb_group" "6"
 }
-// entity 729
+// entity 734
 {
 "classname" "func_door"
 "angle" "-1"
@@ -20954,7 +21037,7 @@
 ( 280 2816 80 ) ( 272 2944 72 ) ( 272 2816 72 ) techdoor_grey1 [ -0.7071067811865476 0 -0.7071067811865476 -48.052246 ] [ 0 -1 0 352 ] 270 1 1
 }
 }
-// entity 730
+// entity 735
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -20964,7 +21047,7 @@
 "_tb_transformation" "1 0 0 3136 0 1 0 2960 0 0 1 -104 0 0 0 1"
 "_tb_group" "6"
 }
-// entity 731
+// entity 736
 {
 "classname" "func_door"
 "spawnflags" "4"
@@ -21009,7 +21092,7 @@
 ( 368 2800 200 ) ( 368 2799 200 ) ( 368 2800 201 ) techdoor_grey1 [ 3.3306690738754696e-16 -1 1.8369701987210302e-16 231 ] [ -6.123233995736762e-17 -1.8369701987210302e-16 -1.0000000000000002 -477 ] 90 1 1
 }
 }
-// entity 732
+// entity 737
 {
 "classname" "func_button"
 "target" "doorx"
@@ -21025,7 +21108,7 @@
 ( 64 2800 112 ) ( 64 2832 80 ) ( 64 2800 80 ) +0techlight_1 [ -6.123233995736767e-17 1.0000000000000002 0 -339 ] [ 0 0 -1.0000000000000002 112 ] 0 1 1
 }
 }
-// entity 733
+// entity 738
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -21035,7 +21118,7 @@
 "_tb_transformation" "1 0 0 -64 0 1 0 -64 0 0 1 0 0 0 0 1"
 "_tb_layer" "2"
 }
-// entity 734
+// entity 739
 {
 "classname" "func_detail"
 "_tb_group" "21"
@@ -21049,7 +21132,7 @@
 ( -16 2688 96 ) ( -16 2672 64 ) ( -16 2672 96 ) techcomp1_grey1 [ 0 1.0000000000000002 0 -444 ] [ 0 0 -1.0000000000000002 287 ] 0 1 1
 }
 }
-// entity 735
+// entity 740
 {
 "classname" "trigger_textstory"
 "_tb_group" "21"
@@ -21063,14 +21146,14 @@
 ( -16 2680 96 ) ( -16 2664 64 ) ( -16 2664 96 ) trigger [ 0 1 0 -60 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 736
+// entity 741
 {
 "classname" "item_shells"
 "origin" "-2352 -304 -8"
 "spawnflags" "1"
 "_tb_layer" "2"
 }
-// entity 737
+// entity 742
 {
 "classname" "func_detail"
 "_tb_layer" "2"
@@ -21084,7 +21167,7 @@
 ( -322 2840 168 ) ( -322 2840 167 ) ( -322 2839 168 ) urb_wp01a_ylw1 [ -6.123233995736766e-17 1 1.2246467991473532e-16 -360 ] [ 1.4997597826618576e-32 -1.2246467991473532e-16 1 120 ] 180 1 1
 }
 }
-// entity 738
+// entity 743
 {
 "classname" "func_group"
 "_tb_type" "_tb_layer"
@@ -22242,7 +22325,7 @@
 ( -560 -1403 -106 ) ( -560 -1403 -105 ) ( -560 -1402 -106 ) *tele01 [ -2.4492935982947064e-16 1 -6.123233995736766e-17 0 ] [ 6.123233995736766e-17 -6.123233995736766e-17 -1 0 ] 270 1 1
 }
 }
-// entity 739
+// entity 744
 {
 "classname" "func_button"
 "target" "artemisa"
@@ -22258,7 +22341,7 @@
 ( 1364 -1766 12 ) ( 1364 -1765 12 ) ( 1364 -1766 11 ) +0button [ -2.449293297789731e-16 0.9999999999998794 -4.907613851343195e-07 32 ] [ 6.123246015923216e-17 -4.907613851343195e-07 -0.9999999999998794 5.999136 ] 270 1 1
 }
 }
-// entity 740
+// entity 745
 {
 "classname" "func_door"
 "targetname" "artemisa"
@@ -22278,7 +22361,7 @@
 ( 1380 -1973 156 ) ( 1380 -1955 135 ) ( 1380 -1955 -26 ) adoor03_2 [ -2.4492935982947064e-16 1 0 32 ] [ 0 0 -1 -26 ] 0 1 1
 }
 }
-// entity 741
+// entity 746
 {
 "classname" "func_door"
 "targetname" "artemisa"
@@ -22300,7 +22383,7 @@
 ( 1380 -2042 166 ) ( 1380 -2015 166 ) ( 1380 -2015 -26 ) adoor03_2 [ -2.4492935982947064e-16 1 0 32 ] [ 0 0 -1 -26 ] 0 1 1
 }
 }
-// entity 742
+// entity 747
 {
 "classname" "trigger_once"
 "message" "Thank you for freeing us."
@@ -22316,7 +22399,7 @@
 ( -332 -1827 36 ) ( -332 -1827 37 ) ( -332 -1826 36 ) trigger [ -2.4492935982947064e-16 1 0 35 ] [ 0 0 -1 -28 ] 0 1 1
 }
 }
-// entity 743
+// entity 748
 {
 "classname" "trigger_once"
 "target" "tsp04"
@@ -22333,7 +22416,7 @@
 ( 864 -1940 -20 ) ( 864 -1940 -19 ) ( 864 -1939 -20 ) trigger [ -2.4492935982947064e-16 1 0 44 ] [ 0 0 -1 -36 ] 0 1 1
 }
 }
-// entity 744
+// entity 749
 {
 "classname" "trigger_once"
 "message" "Open the door and Banish her."
@@ -22349,7 +22432,7 @@
 ( 1632 -2372 100 ) ( 1632 -2371 100 ) ( 1632 -2372 99 ) trigger [ -1.1248198369963932e-32 6.123233995736766e-17 -1 4 ] [ 1.8369701987210297e-16 -1 -6.123233995736766e-17 -36 ] 90 1 1
 }
 }
-// entity 745
+// entity 750
 {
 "classname" "light"
 "origin" "1432 -1704 46"
@@ -22357,37 +22440,37 @@
 "light" "50"
 "_tb_layer" "37"
 }
-// entity 746
+// entity 751
 {
 "classname" "light"
 "origin" "1588 -1732 42"
 "_tb_layer" "37"
 }
-// entity 747
+// entity 752
 {
 "classname" "light"
 "origin" "1588 -2020 42"
 "_tb_layer" "37"
 }
-// entity 748
+// entity 753
 {
 "classname" "light"
 "origin" "1588 -2244 42"
 "_tb_layer" "37"
 }
-// entity 749
+// entity 754
 {
 "classname" "light"
 "origin" "1588 -2536 42"
 "_tb_layer" "37"
 }
-// entity 750
+// entity 755
 {
 "classname" "light"
 "origin" "1604 -2792 42"
 "_tb_layer" "37"
 }
-// entity 751
+// entity 756
 {
 "classname" "ambient_general"
 "origin" "1480 -2952 30"
@@ -22395,7 +22478,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 752
+// entity 757
 {
 "classname" "trigger_once"
 "target" "urantiasghost"
@@ -22412,7 +22495,7 @@
 ( 1248 -1856 38 ) ( 1248 -2160 -26 ) ( 1248 -2160 38 ) trigger [ -2.4492935982947064e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 753
+// entity 758
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -22422,7 +22505,7 @@
 "_tb_transformation" "1 -2.4492935982947064e-16 0 -4.547473508864641e-13 2.4492935982947064e-16 1 0 -2.2737367544323206e-13 0 0 1 0 0 0 0 1"
 "_tb_layer" "37"
 }
-// entity 754
+// entity 759
 {
 "classname" "func_detail"
 "_phong" "1"
@@ -22599,21 +22682,21 @@
 ( -147 -2536 -12 ) ( -147 -2536 -11 ) ( -147 -2535 -12 ) metal1_4 [ -2.4492935982947064e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 755
+// entity 760
 {
 "classname" "item_armor_shard"
 "origin" "1168 -2688 -36"
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 756
+// entity 761
 {
 "classname" "item_armor_shard"
 "origin" "1104 -2688 -36"
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 757
+// entity 762
 {
 "classname" "func_detail_illusionary"
 "_tb_layer" "37"
@@ -22627,7 +22710,7 @@
 ( 1136 -2732 20 ) ( 1136 -2748 -12 ) ( 1136 -2748 20 ) techcomp1_grey1 [ -3.6739403974420604e-16 1.0000000000000002 0 344 ] [ 0 0 -1.0000000000000002 211 ] 0 1 1
 }
 }
-// entity 758
+// entity 763
 {
 "classname" "func_detail"
 "_tb_layer" "37"
@@ -22641,7 +22724,7 @@
 ( 1214 -2860 82 ) ( 1214 -2860 83 ) ( 1214 -2859 82 ) metal4_4 [ -3.6739403974420604e-16 1 -6.123233995736766e-17 0 ] [ -1.2246467991473532e-16 -6.123233995736775e-17 -1 0 ] 270 1 1
 }
 }
-// entity 759
+// entity 764
 {
 "classname" "func_detail"
 "_tb_layer" "37"
@@ -22817,7 +22900,7 @@
 ( 1210 -2084 -2 ) ( 1210 -2084 -1 ) ( 1210 -2083 -2 ) metal1_7 [ -2.4492935982947064e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 760
+// entity 765
 {
 "classname" "misc_model"
 "origin" "1072 -2144 -2"
@@ -22827,7 +22910,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 761
+// entity 766
 {
 "classname" "misc_model"
 "origin" "896 -2144 -2"
@@ -22837,7 +22920,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 762
+// entity 767
 {
 "classname" "misc_model"
 "origin" "688 -2144 -2"
@@ -22847,7 +22930,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 763
+// entity 768
 {
 "classname" "func_detail"
 "_tb_layer" "37"
@@ -23032,7 +23115,7 @@
 ( 1230 -1764 -2 ) ( 1230 -1764 -1 ) ( 1230 -1763 -2 ) metal1_4 [ -2.4492935982947064e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 764
+// entity 769
 {
 "classname" "trigger_teleport_instadestination"
 "targetname" "urantia"
@@ -23048,7 +23131,7 @@
 ( 1568 -2864 88 ) ( 1568 -2864 89 ) ( 1568 -2863 88 ) trigger [ -2.4492935982947064e-16 1 0 32 ] [ 0 0 -1 -8 ] 0 1 1
 }
 }
-// entity 765
+// entity 770
 {
 "classname" "light"
 "origin" "1184 -2684 62"
@@ -23058,7 +23141,7 @@
 "spawnflags" "1"
 "_tb_layer" "37"
 }
-// entity 766
+// entity 771
 {
 "classname" "trigger_once"
 "message" "There's no secret goblin... this time."
@@ -23075,7 +23158,7 @@
 ( 928 -2672 -4 ) ( 928 -2720 -36 ) ( 928 -2720 -4 ) trigger [ -2.4492935982947064e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 767
+// entity 772
 {
 "classname" "trigger_textstory"
 "message" "Urantia is alive, don't be fooled, the\nstroggs recovered her body to make\nher a twisted machine-queen, don't\nget fooled, We can't let them win,\nfight still continues, She won't\ndrain any other water of any other\nplanet in the universe... Capt. Nadia\nPetrova, General of Earth Galactic\nForces. Final log, #1999."
@@ -23091,7 +23174,7 @@
 ( 1136 -2724 20 ) ( 1136 -2740 -12 ) ( 1136 -2740 20 ) trigger [ -3.67394039744206e-16 1 0 56 ] [ 0 0 -1 -12 ] 0 1 1
 }
 }
-// entity 768
+// entity 773
 {
 "classname" "func_detail"
 "_tb_layer" "37"
@@ -23141,7 +23224,7 @@
 ( -152 -1594 168 ) ( -152 -1595 168 ) ( -152 -1594 169 ) metal4_4 [ -3.0616169978683836e-16 1 -1.2246467991473527e-16 0 ] [ 6.123233995736773e-17 -1.2246467991473532e-16 -1 0 ] 180 1 1
 }
 }
-// entity 769
+// entity 774
 {
 "classname" "trigger_once"
 "target" "musicreturn"
@@ -23156,7 +23239,7 @@
 ( -560 -1403 -106 ) ( -560 -1403 -105 ) ( -560 -1402 -106 ) trigger [ -2.4492935982947064e-16 1 -6.123233995736766e-17 0 ] [ 6.123233995736766e-17 -6.123233995736766e-17 -1 0 ] 270 1 1
 }
 }
-// entity 770
+// entity 775
 {
 "classname" "ambient_general"
 "origin" "-568 -1544 24"
@@ -23164,7 +23247,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 771
+// entity 776
 {
 "classname" "misc_changemusic"
 "origin" "-456 -1480 4"
@@ -23173,7 +23256,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 772
+// entity 777
 {
 "classname" "monster_shambler"
 "origin" "-432 -1696 -2"
@@ -23182,7 +23265,7 @@
 "targetname" "urantiasghost2"
 "_tb_layer" "37"
 }
-// entity 773
+// entity 778
 {
 "classname" "trigger_once"
 "targetname" "tscare02"
@@ -23200,7 +23283,7 @@
 ( -328 -1904 22 ) ( -328 -1920 -26 ) ( -328 -1920 22 ) trigger [ -2.4492935982947064e-16 1 0 48 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 774
+// entity 779
 {
 "classname" "trigger_teleport"
 "target" "returnfromurantia"
@@ -23215,7 +23298,7 @@
 ( -560 -1403 -106 ) ( -560 -1403 -105 ) ( -560 -1402 -106 ) trigger [ -2.4492935982947064e-16 1 -6.123233995736766e-17 0 ] [ 6.123233995736766e-17 -6.123233995736766e-17 -1 0 ] 270 1 1
 }
 }
-// entity 775
+// entity 780
 {
 "classname" "trigger_once"
 "targetname" "tscare02"
@@ -23233,7 +23316,7 @@
 ( -328 -2384 22 ) ( -328 -2400 -26 ) ( -328 -2400 22 ) trigger [ -2.4492935982947064e-16 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 776
+// entity 781
 {
 "classname" "trigger_once"
 "target2" "lightsonscare"
@@ -23248,7 +23331,7 @@
 ( -336 -2624 38 ) ( -336 -2736 -26 ) ( -336 -2736 38 ) trigger [ -2.4492935982947064e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 777
+// entity 782
 {
 "classname" "func_detail"
 "_tb_layer" "37"
@@ -23307,7 +23390,7 @@
 ( 1102 -2276 168 ) ( 1102 -2277 168 ) ( 1102 -2276 169 ) metal4_4 [ -3.0616169978683836e-16 1 -1.2246467991473527e-16 0 ] [ 6.123233995736773e-17 -1.2246467991473532e-16 -1 0 ] 180 1 1
 }
 }
-// entity 778
+// entity 783
 {
 "classname" "func_detail"
 "_tb_layer" "37"
@@ -23330,7 +23413,7 @@
 ( 754 -2860 82 ) ( 754 -2860 83 ) ( 754 -2859 82 ) metal4_4 [ -3.6739403974420604e-16 1 -6.123233995736766e-17 16 ] [ -1.2246467991473532e-16 -6.123233995736775e-17 -1 0 ] 270 1 1
 }
 }
-// entity 779
+// entity 784
 {
 "classname" "light"
 "origin" "-436 -2680 62"
@@ -23341,7 +23424,7 @@
 "style" "10"
 "_tb_layer" "37"
 }
-// entity 780
+// entity 785
 {
 "classname" "play_sound_triggered"
 "origin" "-408 -2664 34"
@@ -23350,7 +23433,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 781
+// entity 786
 {
 "classname" "light"
 "origin" "-196 -2684 62"
@@ -23360,7 +23443,7 @@
 "spawnflags" "1"
 "_tb_layer" "37"
 }
-// entity 782
+// entity 787
 {
 "classname" "play_sound_triggered"
 "origin" "248 -2672 34"
@@ -23369,7 +23452,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 783
+// entity 788
 {
 "classname" "light"
 "origin" "228 -2684 62"
@@ -23379,7 +23462,7 @@
 "spawnflags" "1"
 "_tb_layer" "37"
 }
-// entity 784
+// entity 789
 {
 "classname" "light"
 "origin" "724 -2684 62"
@@ -23389,7 +23472,7 @@
 "spawnflags" "1"
 "_tb_layer" "37"
 }
-// entity 785
+// entity 790
 {
 "classname" "play_sound_triggered"
 "origin" "1176 -1992 34"
@@ -23398,7 +23481,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 786
+// entity 791
 {
 "classname" "light"
 "origin" "1096 -2016 142"
@@ -23408,7 +23491,7 @@
 "spawnflags" "1"
 "_tb_layer" "37"
 }
-// entity 787
+// entity 792
 {
 "classname" "func_detail"
 "_tb_layer" "37"
@@ -23458,7 +23541,7 @@
 ( -160 -1964 168 ) ( -160 -1965 168 ) ( -160 -1964 169 ) metal4_4 [ -3.0616169978683836e-16 1 -1.2246467991473527e-16 10 ] [ 6.123233995736773e-17 -1.2246467991473532e-16 -1 0 ] 180 1 1
 }
 }
-// entity 788
+// entity 793
 {
 "classname" "misc_model"
 "origin" "1072 -1880 -2"
@@ -23468,7 +23551,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 789
+// entity 794
 {
 "classname" "misc_model"
 "origin" "896 -1880 -2"
@@ -23478,7 +23561,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 790
+// entity 795
 {
 "classname" "monster_shambler"
 "origin" "544 -2016 -2"
@@ -23487,7 +23570,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 791
+// entity 796
 {
 "classname" "misc_model"
 "origin" "688 -1880 -2"
@@ -23497,7 +23580,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 792
+// entity 797
 {
 "classname" "trigger_relay"
 "origin" "344 -2040 62"
@@ -23510,7 +23593,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 793
+// entity 798
 {
 "classname" "light"
 "origin" "408 -2016 142"
@@ -23520,7 +23603,7 @@
 "spawnflags" "1"
 "_tb_layer" "37"
 }
-// entity 794
+// entity 799
 {
 "classname" "light"
 "origin" "712 -2016 142"
@@ -23530,7 +23613,7 @@
 "spawnflags" "1"
 "_tb_layer" "37"
 }
-// entity 795
+// entity 800
 {
 "classname" "path_angry"
 "origin" "696 -2024 30"
@@ -23538,7 +23621,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 796
+// entity 801
 {
 "classname" "target_startpath"
 "origin" "664 -1944 -18"
@@ -23548,7 +23631,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 797
+// entity 802
 {
 "classname" "trigger_relay"
 "origin" "600 -1912 46"
@@ -23559,7 +23642,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 798
+// entity 803
 {
 "classname" "target_hurt"
 "origin" "536 -1912 46"
@@ -23569,7 +23652,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 799
+// entity 804
 {
 "classname" "misc_model"
 "origin" "464 -1880 -2"
@@ -23579,7 +23662,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 800
+// entity 805
 {
 "classname" "misc_model"
 "origin" "464 -2144 -2"
@@ -23589,7 +23672,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 801
+// entity 806
 {
 "classname" "misc_model"
 "origin" "240 -2144 -2"
@@ -23599,7 +23682,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 802
+// entity 807
 {
 "classname" "misc_model"
 "origin" "240 -1880 -2"
@@ -23609,7 +23692,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 803
+// entity 808
 {
 "classname" "misc_model"
 "origin" "16 -2144 -2"
@@ -23619,7 +23702,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 804
+// entity 809
 {
 "classname" "misc_model"
 "origin" "16 -1880 -2"
@@ -23629,7 +23712,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 805
+// entity 810
 {
 "classname" "light"
 "origin" "112 -2016 142"
@@ -23639,7 +23722,7 @@
 "spawnflags" "1"
 "_tb_layer" "37"
 }
-// entity 806
+// entity 811
 {
 "classname" "trigger_secret"
 "is_waiting" "1"
@@ -23656,7 +23739,7 @@
 ( -48 -1968 38 ) ( -48 -2048 -26 ) ( -48 -2048 38 ) trigger [ -2.4492935982947064e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 807
+// entity 812
 {
 "classname" "light"
 "origin" "-176 -2016 142"
@@ -23666,7 +23749,7 @@
 "spawnflags" "1"
 "_tb_layer" "37"
 }
-// entity 808
+// entity 813
 {
 "classname" "target_explosion"
 "origin" "-264 -1960 62"
@@ -23674,7 +23757,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 809
+// entity 814
 {
 "classname" "target_explosion"
 "origin" "-264 -2040 62"
@@ -23682,7 +23765,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 810
+// entity 815
 {
 "classname" "func_breakable"
 "targetname" "fb06"
@@ -23712,7 +23795,7 @@
 ( -293 -2007 159 ) ( -293 -1993 159 ) ( -293 -1993 -36 ) adoor03_2 [ -2.4492935982947064e-16 1 0 10 ] [ 0 0 -1 -36 ] 0 1 1
 }
 }
-// entity 811
+// entity 816
 {
 "classname" "misc_model"
 "origin" "-208 -1864 -2"
@@ -23722,7 +23805,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 812
+// entity 817
 {
 "classname" "misc_model"
 "origin" "-208 -2128 -2"
@@ -23732,7 +23815,7 @@
 "spawnflags" "2"
 "_tb_layer" "37"
 }
-// entity 813
+// entity 818
 {
 "classname" "weapon_lightning"
 "origin" "-96 -2000 -26"
@@ -23741,7 +23824,7 @@
 "angle" "0"
 "_tb_layer" "37"
 }
-// entity 814
+// entity 819
 {
 "classname" "play_sound_triggered"
 "origin" "-456 -2296 50"
