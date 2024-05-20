@@ -16203,6 +16203,7 @@
 "classname" "item_artifact_envirosuit"
 "origin" "-4528 3488 -984"
 "ritem" "1"
+"respawndelay" "18"
 }
 // entity 331
 {
