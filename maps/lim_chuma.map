@@ -17,6 +17,11 @@
 "_bounce" "1"
 "_dirt" "1"
 "_sunlight3" "100"
+"fog_density" "0.025"
+"fog_color" "171 207 223"
+"_sunlight_color" "198 194 138"
+"_sunlight2_color" "160 122 123"
+"_sunlight3_color" "130 141 160"
 // brush 0
 {
 ( -64 -64 -16 ) ( -64 -63 -16 ) ( -64 -64 -15 ) urb_cp01_wht1 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
