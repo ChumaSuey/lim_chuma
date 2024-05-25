@@ -13488,7 +13488,7 @@
 // entity 76
 {
 "classname" "trigger_textstory"
-"message" "They found out i am not human, i don't\nhave a lot of time or energy to keep\nfigthing, if someone reads this: My\naxe fell into a water pool and i left\na shotgun hidden in a secret\npunchable wall in the core room...\nhope it serves you better, best of\nluck, J."
+"message" "They found out i am not human, i don't\nhave a lot of time or energy to keep\nfighting, if someone reads this: My\naxe fell into a water pool and i left\na shotgun hidden in a secret\npunchable wall in the core room...\nhope it serves you better, best of\nluck, J."
 // brush 0
 {
 ( -896 968 48 ) ( -896 984 16 ) ( -896 984 48 ) trigger [ 2.4492935982947064e-16 -1 0 28 ] [ 0 0 -1 16 ] 0 1 1
