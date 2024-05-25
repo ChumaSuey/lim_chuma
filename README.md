@@ -77,7 +77,7 @@ This map was fun to make, Alkaline is a powerful mod, and a special thanks to bm
 - Forte (playtesting and feedback).
 - Yuyi and Alunadrern (playtesting and FOG/Sky values).
 - 66pt99 (playtesting and feedback).
-- Em3raldtiger (playtesting and feedback).
+- Em3raldTig3r (playtesting and feedback).
 - Admer (correction in the lore notes).
 - Lobotomy-Lobster (playtesting and feedback).
 - DEvSEb (playtesting and feedback). 
